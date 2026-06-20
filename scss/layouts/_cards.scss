@@ -1,0 +1,109 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+.card {
+  background-color: $color-surface;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+  }
+
+  .card-content {
+    padding: 16px;
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: $color-text;
+      margin-bottom: 8px;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      color: $color-text-muted;
+      line-height: 1.5;
+    }
+  }
+}
+.panel-card,
+.service-card,
+.project-card,
+.value-card,
+.skill-card,
+.project-case,
+.contact-form,
+.contact-details > div,
+.about-stats > div {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  box-shadow: $shadow;
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.panel-card h2,
+.service-card h3,
+.project-card h3,
+.value-card h3,
+.skill-card h3,
+.project-case h2 {
+  margin: 0 0 14px;
+}
+@media (max-width: 900px) {
+  .section-hero,
+  .about-hero,
+  .grid-3,
+  .grid-2,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel,
+  .panel-card,
+  .service-card,
+  .project-card,
+  .value-card,
+  .skill-card,
+  .project-case,
+  .contact-form,
+  .contact-details > div {
+    border-radius: 20px;
+  }
+}
+
+.project-card,
+.project-case,
+.value-card,
+.skill-card {
+  min-height: 220px;
+}
+
+.project-case ul {
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+
+.project-case ul li {
+  margin-bottom: 10px;
+}
+
+.project-case .case-meta span {
+  display: block;
+  color: $color-accent;
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+}

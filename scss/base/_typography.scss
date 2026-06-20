@@ -1,0 +1,72 @@
+@use "../abstract/variables" as *;
+
+html {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-text;
+  color-scheme: dark;
+}
+
+.hero-copy h1,
+.page-hero h1,
+.section-heading h2,
+.project-case h2,
+.service-card h3,
+.value-card h3,
+.skill-card h3 {
+  line-height: 1.05;
+}
+
+.hero-copy h1,
+.page-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin: 18px 0 20px;
+}
+
+.hero-copy p,
+.section h2 + p,
+.section p,
+.project-case p,
+.value-card p,
+.skill-card p {
+  color: $color-text-muted;
+  max-width: 64ch;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: $color-accent;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  margin: 12px 0 0;
+}
+
+.highlight-copy h2 {
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  margin: 0 0 18px;
+}
+
+.project-card h3,
+.project-case .case-meta h2 {
+  font-size: 1.4rem;
+}
+
+.about-stats strong {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.skill-list {
+  margin-top: 18px;
+  color: $color-accent;
+  font-size: 0.95rem;
+}

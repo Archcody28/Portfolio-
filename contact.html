@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Schedule a Consultation</title>
+  <meta name="description" content="Contact Sans devs to discuss software development, product design, and growth-focused digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Sans devs</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html" class="button button-secondary">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section page-hero">
+        <div>
+          <span class="eyebrow">Let�s collaborate</span>
+          <h1>Ready to launch your next product or improve conversion with better design?</h1>
+          <p>Share your goals and timeline, and I�ll propose the fastest path to a polished, measurable result.</p>
+        </div>
+      </section>
+
+      <section class="section contact-form-section">
+        <div class="grid grid-2 contact-grid">
+          <div>
+            <h2>Describe your project</h2>
+            <p>Tell me about the product, the audience, and the impact you want to create. I work with ambitious teams looking for results, speed, and clarity.</p>
+            <div class="contact-details">
+              <div>
+                <strong>Email</strong>
+                <p>hello.sansdevs@gmail.com</p>
+              </div>
+              <div>
+                <strong>Availability</strong>
+                <p>Open for new projects</p>
+              </div>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <label>Full name<input type="text" name="name" placeholder="Jane Doe" required /></label>
+            <label>Email address<input type="email" name="email" placeholder="you@example.com" required /></label>
+            <label>Project summary<textarea name="message" rows="6" placeholder="A brief overview of your project and goals." required></textarea></label>
+            <button class="button button-primary" type="submit">Send message</button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Looking for a design-driven build partner? <a href="index.html">Start with the homepage.</a></p>
+      <small>&copy; 2026 Sans devs.</small>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</body>
+</html>

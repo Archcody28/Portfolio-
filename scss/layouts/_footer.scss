@@ -1,0 +1,24 @@
+@use "../abstract/variables" as *;
+.footer {
+  text-align: center;
+  padding: 24px 0;
+  color: $color-text-muted;
+  font-size: 0.875rem;
+}
+
+.site-footer {
+  margin-top: 32px;
+  padding: 36px 0 12px;
+  text-align: center;
+  color: $color-text-muted;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.site-footer a {
+  color: $color-accent;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  text-decoration: underline;
+}

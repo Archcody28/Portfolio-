@@ -1,0 +1,59 @@
+@use "../abstract/variables" as *;
+@use"../abstract/mixins" as *;
+
+.section {
+  padding: 64px 0;
+}
+
+.section-hero,
+.page-hero {
+  display: grid;
+  gap: 32px;
+  align-items: start;
+  padding-top: 48px;
+}
+
+.section-hero {
+  grid-template-columns: minmax(0, 1.3fr) minmax(320px, 0.9fr);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.hero-panel {
+  display: grid;
+  gap: 24px;
+}
+
+//about hero
+.about-hero {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+}
+
+.about-stats {
+  display: grid;
+  gap: 18px;
+}
+
+.about-stats > div {
+  text-align: center;
+}
+
+.about-stats span {
+  display: block;
+  color: $color-text-muted;
+}
+
+.narrative p {
+  margin-top: 12px;
+}
+
+.page-hero {
+  padding-top: 18px;
+}
