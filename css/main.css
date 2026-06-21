@@ -8,7 +8,6 @@ html {
 
 body {
   margin: 0;
-  min-height: 100vh;
   background: radial-gradient(circle at top, rgba(107, 215, 255, 0.12), transparent 32%), linear-gradient(180deg, #07101d 0%, #070b12 45%, #020406 100%);
 }
 
@@ -52,7 +51,7 @@ html {
 
 .hero-copy h1,
 .page-hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.1rem, 5vw, 4rem);
   margin: 18px 0 20px;
 }
 
@@ -63,7 +62,7 @@ html {
 .value-card p,
 .skill-card p {
   color: #b3c2d9;
-  max-width: 64ch;
+  max-width: 35ch;
 }
 
 .eyebrow {
@@ -106,7 +105,6 @@ html {
 .site-shell {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px 48px;
 }
 
 .site-header {
@@ -114,10 +112,12 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 24px 0;
-  position: sticky;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 24px 16px;
   top: 0;
-  z-index: 20;
+  position: sticky;
+  z-index: 999999;
   backdrop-filter: blur(18px);
   background: rgba(11, 16, 24, 0.82);
 }
@@ -203,7 +203,7 @@ html {
     font-size: clamp(2rem, 7vw, 2.5rem);
   }
   .button {
-    width: 50%;
+    width: 100%;
   }
 }
 .metrics-list,
@@ -315,13 +315,14 @@ html {
 .section-hero,
 .page-hero {
   display: grid;
-  gap: 32px;
+  gap: 30px;
   align-items: start;
   padding-top: 48px;
 }
 
 .section-hero {
-  grid-template-columns: minmax(0, 1.3fr) minmax(320px, 0.9fr);
+  margin-left: 0;
+  grid-template-columns: minmax(0, 1.3fr) minmax(310px, 0.9fr);
 }
 
 .hero-actions {
@@ -333,7 +334,7 @@ html {
 
 .hero-panel {
   display: grid;
-  gap: 24px;
+  gap: 20px;
 }
 
 .about-hero {

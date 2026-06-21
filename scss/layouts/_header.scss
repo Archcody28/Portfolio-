@@ -4,7 +4,7 @@
 .site-shell {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px 48px;
+
 }
 
 .site-header {
@@ -12,10 +12,13 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 24px 0;
-  position: sticky;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 24px 16px;
   top: 0;
-  z-index: 20;
+  position: sticky;
+
+  z-index: 999999;
   backdrop-filter: blur(18px);
   background: rgba(11, 16, 24, 0.82);
 }
@@ -109,6 +112,6 @@
   }
 
   .button {
-    width: 50%;
+    width: 100%;
   }
 }

@@ -20,7 +20,7 @@ html {
 
 .hero-copy h1,
 .page-hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.1rem, 5vw, 4rem);
   margin: 18px 0 20px;
 }
 
@@ -31,7 +31,7 @@ html {
 .value-card p,
 .skill-card p {
   color: $color-text-muted;
-  max-width: 64ch;
+  max-width: 35ch;
 }
 
 .eyebrow {

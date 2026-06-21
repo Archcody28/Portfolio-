@@ -8,13 +8,14 @@
 .section-hero,
 .page-hero {
   display: grid;
-  gap: 32px;
+  gap: 30px;
   align-items: start;
   padding-top: 48px;
 }
 
 .section-hero {
-  grid-template-columns: minmax(0, 1.3fr) minmax(320px, 0.9fr);
+  margin-left: 0;
+  grid-template-columns: minmax(0, 1.3fr) minmax(310px, 0.9fr);
 }
 
 .hero-actions {
@@ -26,7 +27,7 @@
 
 .hero-panel {
   display: grid;
-  gap: 24px;
+  gap: 20px;
 }
 
 //about hero
